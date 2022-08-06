@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { useState } from "react";
+import Board from "./Board";
 function App() {
+  const [reset, setReset] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="h-screen w-full flex flex-col items-center justify-center">
+      <h1 className="font-bold text-2xl">Lokesh X-O Game</h1>
+      <div className="">
+        <Board />
+      </div>
     </div>
   );
 }
