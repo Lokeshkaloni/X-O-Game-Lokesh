@@ -63,6 +63,7 @@ const Board = () => {
         className="bg-yellow-500 mt-2 border-indigo-500 border-2"
         onClick={() => {
           setGameState(initialState);
+          setIsXTurn(true);
         }}
       >
         Clear Game
