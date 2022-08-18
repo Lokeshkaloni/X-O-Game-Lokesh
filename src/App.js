@@ -12,7 +12,7 @@ function App() {
         allowfullscreen
       ></iframe>
       <h1 className="font-bold text-2xl">Lokesh X-O Game</h1>
-      <div className="">
+      <div>
         <Board />
       </div>
     </div>
